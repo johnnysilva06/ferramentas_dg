@@ -32,6 +32,7 @@ body {
 /* Ajuste no tamanho do card para tela grande */
 .imagens {
   width: 240px;
+  height: flex;
   padding: 10px;
   background-color: #bdb6b6;
   border-radius: 20px;
@@ -75,7 +76,7 @@ h1 {
         
 }
 
-h4 {
+h5 {
     border-bottom: 3px solid #3498db;
     color: #101111;
     font-size: 32px; 
