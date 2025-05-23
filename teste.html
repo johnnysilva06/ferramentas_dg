@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel de Metas por Loja</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f2f5f9;
+      color: #333;
+    }
+
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .loja {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-left: 6px solid #004aad;
+    }
+
+    .loja-meta-ok {
+      border-left-color: #2e7d32;
+    }
+
+    .loja h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .progresso {
+      background: #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+
+    .barra {
+      height: 100%;
+      transition: width 0.4s ease;
+    }
+
+    .meta-baixa { background: #e53935; }
+    .meta-media { background: #fbc02d; }
+    .meta-alta { background: #43a047; }
+
+    .emojis {
+      font-size: 1.2rem;
+    }
+
+    .destaque {
+      font-weight: bold;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Painel de Metas por Loja - Maio 2025</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="loja loja-meta-ok">
+      <h2>🏆 Loja Mooca <span class="destaque">[110%]</span></h2>
+      <div class="progresso">
+        <div class="barra meta-alta" style="width: 110%;"></div>
+      </div>
+      <p class="emojis">🚀 Parabéns! Meta superada!</p>
+    </div>
+
+    <div class="loja loja-meta-ok">
+      <h2>📍 Loja Santana [95%]</h2>
+      <div class="progresso">
+        <div class="barra meta-alta" style="width: 95%;"></div>
+      </div>
+      <p class="emojis">👏 Quase lá!</p>
+    </div>
+
+    <div class="loja">
+      <h2>📍 Loja Tatuapé [67%]</h2>
+      <div class="progresso">
+        <div class="barra meta-media" style="width: 67%;"></div>
+      </div>
+      <p class="emojis">🛠️ Acelerem nas vendas!</p>
+    </div>
+
+    <div class="loja">
+      <h2>📍 Loja Osasco [42%]</h2>
+      <div class="progresso">
+        <div class="barra meta-baixa" style="width: 32%;"></div>
+      </div>
+      <p class="emojis">⚠️ Atenção! Vamos reagir!</p>
+    </div>
+
+  </div>
+</body>
+</html>
