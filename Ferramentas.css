@@ -5,28 +5,29 @@ body {
 }
 
 .arquivos {
-  box-shadow: 10px 30px 20px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* coloca lado a lado */
+  gap: 20px; /* espaço entre eles */
+  align-items: center; /* centraliza verticalmente */
   text-align: center;
-  text-decoration:dashed;
+  display: flex;
+  flex-direction: line; /* coloca os itens em linha */
+  justify-content: center; /* centraliza horizontalmente */
 }
+
 .arquivos img {
   max-width: 80px;
-
 }
 
 /*>>>>>>>>>>>>>>>>>> INICIO FORMATAÇÃO MONITORAMENTO <<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .Ferramentas {
-  max-width: 8000px;       /* limite para não esticar demais */
-  margin: 0 auto;          /* centraliza horizontalmente */
+  max-width: 8000px; /* limite para não esticar demais */
+  margin: 0 auto; /* centraliza horizontalmente */
   padding: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;               /* mais espaço entre cards */
+  gap: 40px; /* mais espaço entre cards */
 }
 
 /* Ajuste no tamanho do card para tela grande */
@@ -36,7 +37,7 @@ body {
   padding: 10px;
   background-color: #bdb6b6;
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,46 +45,45 @@ body {
 }
 
 .botao {
-  display: block;       /* para respeitar a largura 100% */
-  width: 180px;          /* ocupa toda a largura do container */
+  display: block; /* para respeitar a largura 100% */
+  width: 180px; /* ocupa toda a largura do container */
   height: 20px;
   margin-top: 12px;
-  padding: 3px 0;      /* só padding vertical pra deixar mais bonito */
+  padding: 3px 0; /* só padding vertical pra deixar mais bonito */
   background-color: #3498db;
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
   font-size: 20px;
-  text-align: center;   /* centraliza o texto dentro do botão */
+  text-align: center; /* centraliza o texto dentro do botão */
   transition: background-color 0.3s;
 }
 
 .botao:hover {
   background-color: #c0392b;
-} 
+}
 
 h1 {
-    width: flex;
-    color: #eee8e8;
-    background-color: #c0392b;
-    border-radius: 20px; /* Arredondamento da borda */
-    font-size: 32px;
-    font-weight:800;
-    padding: 4px;
-    text-align: center;
-    border-width: flex;
-        
+  width: flex;
+  color: #eee8e8;
+  background-color: #c0392b;
+  border-radius: 20px; /* Arredondamento da borda */
+  font-size: 32px;
+  font-weight: 800;
+  padding: 4px;
+  text-align: center;
+  border-width: flex;
 }
 
 h5 {
-    border-bottom: 3px solid #3498db;
-    color: #101111;
-    font-size: 32px; 
-    font-weight:800;
-    padding: 4px;
-    text-align: center;
-    border-width: flex;
+  border-bottom: 3px solid #3498db;
+  color: #101111;
+  font-size: 32px;
+  font-weight: 800;
+  padding: 4px;
+  text-align: center;
+  border-width: flex;
 }
 
 .imagens img {
@@ -93,4 +93,11 @@ h5 {
   padding: 0px;
 }
 
-
+.mapa {
+  position: center;
+  bottom: 0; /* gruda embaixo */
+  left: 0;
+  width: 100%; /* ocupa toda a largura */
+  height: 110vh; /* ocupa 60% da tela, pode ajustar */
+  border: none;
+}
